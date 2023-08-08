@@ -1,0 +1,188 @@
+//Some quick notes:
+//1: SERIKO does NOT support same line comments. If you want to write a comment, ALWAYS PUT IT ON ITS OWN LINE. If you put comments after other bits of code in the same line, it may seem to work at first, but it can cause cryptic errors down the line. Save yourself the trouble. Always put comments on their own lines in here. Additionally, it doesn't do block comments with /* and */
+//2: The example blink code is set up with the new definition, which I recommend you use. Here is my guide to what that means: https://zichqec.github.io/s-the-skeleton/olddef_vs_newdef
+//If you want to use old definition, make sure to erase that 'version,1' bit.
+//3: It is very common for people to feel stuck on how to start, because they don't know what expressions to make without having dialogue, but they don't know what dialogue to write without having expressions. If you're feeling that way, I highly suggest using emoji as substitutes just to get you started! That may sound weird if you're not fond of emoji, but seriously, just give it a try. I've found that just writing a few messages in Discord and using the emoji to signify surface changes is a great help to get me past that initial hump where it feels impossible.
+
+
+descript
+{
+	version,1
+}
+
+//—————————————————————————————— Sakura surfaces ——————————————————————————————
+
+surface0
+{
+	collision0,21,2,64,43,leftear
+	collision1,78,191,110,211,rightfoot
+	collision2,98,10,132,39,rightear
+	collision3,44,186,75,211,leftfoot
+	collision4,58,18,99,38,head
+	collision5,58,95,96,155,tummy
+	collision6,68,46,85,55,nose
+	collision7,9,138,47,165,lefthand
+	collision8,109,147,140,173,righthand
+
+
+// - dressups
+
+//------------------------------------------------ LINES
+
+//white
+animation202.interval,bind
+animation202.pattern0,overlay,202,0,0,0
+
+//black
+animation203.interval,bind
+animation203.pattern0,overlay,203,0,0,0
+
+//queer
+animation211.interval,bind
+animation211.pattern0,overlay,211,0,0,0
+
+//gay
+animation212.interval,bind
+animation212.pattern0,overlay,212,0,0,0
+
+//lesbian
+animation213.interval,bind
+animation213.pattern0,overlay,213,0,0,0
+
+//bisexual
+animation214.interval,bind
+animation214.pattern0,overlay,214,0,0,0
+
+//pansexual
+animation215.interval,bind
+animation215.pattern0,overlay,215,0,0,0
+
+//transgender
+animation216.interval,bind
+animation216.pattern0,overlay,216,0,0,0
+
+//nonbinary
+animation217.interval,bind
+animation217.pattern0,overlay,217,0,0,0
+
+//asexual
+animation218.interval,bind
+animation218.pattern0,overlay,218,0,0,0
+
+//aromantic
+animation219.interval,bind
+animation219.pattern0,overlay,219,0,0,0
+
+//aroace
+animation220.interval,bind
+animation220.pattern0,overlay,220,0,0,0
+
+//genderfluid
+animation221.interval,bind
+animation221.pattern0,overlay,221,0,0,0
+
+//progress
+animation222.interval,bind
+animation222.pattern0,overlay,222,0,0,0
+
+//demisexual
+animation223.interval,bind
+animation223.pattern0,overlay,223,0,0,0
+
+//agender
+animation224.interval,bind
+animation224.pattern0,overlay,224,0,0,0
+
+//------------------------------------------------ INNER
+
+//transparent
+animation101.interval,bind
+animation101.pattern0,overlay,101,0,0,0
+
+//white
+animation102.interval,bind
+animation102.pattern0,overlay,102,0,0,0
+
+//black
+animation103.interval,bind
+animation103.pattern0,overlay,103,0,0,0
+
+//queer
+animation111.interval,bind
+animation111.pattern0,overlay,111,0,0,0
+
+//gay
+animation112.interval,bind
+animation112.pattern0,overlay,112,0,0,0
+
+//lesbian
+animation113.interval,bind
+animation113.pattern0,overlay,113,0,0,0
+
+//bisexual
+animation114.interval,bind
+animation114.pattern0,overlay,114,0,0,0
+
+//pansexual
+animation115.interval,bind
+animation115.pattern0,overlay,115,0,0,0
+
+//transgender
+animation116.interval,bind
+animation116.pattern0,overlay,116,0,0,0
+
+//nonbinary
+animation117.interval,bind
+animation117.pattern0,overlay,117,0,0,0
+
+//asexual
+animation118.interval,bind
+animation118.pattern0,overlay,118,0,0,0
+
+//aromantic
+animation119.interval,bind
+animation119.pattern0,overlay,119,0,0,0
+
+//aroace
+animation120.interval,bind
+animation120.pattern0,overlay,120,0,0,0
+
+//genderfluid
+animation121.interval,bind
+animation121.pattern0,overlay,121,0,0,0
+
+//progress
+animation122.interval,bind
+animation122.pattern0,overlay,122,0,0,0
+
+//demisexual
+animation123.interval,bind
+animation123.pattern0,overlay,123,0,0,0
+
+//agender
+animation124.interval,bind
+animation124.pattern0,overlay,124,0,0,0
+}
+
+char0.tooltips
+{
+leftear,Preferences
+rightear,Talk Rate
+}
+
+sakura.cursor
+{
+mouseup0,head,system:hand
+mousedown0,head,system:grip
+
+mouseup1,tummy,system:arrow
+
+mouseup2,righthand,system:hand
+mousedown2,righthand,system:grip
+
+mouseup3,lefthand,system:hand
+mousedown3,lefthand,system:grip
+
+mouseup1,rightfoot,system:arrow
+mouseup1,leftfoot,system:arrow
+}

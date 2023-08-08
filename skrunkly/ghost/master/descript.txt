@@ -1,0 +1,18 @@
+charset,UTF-8
+
+name,Skrunkly
+type,ghost
+
+shiori,yaya.dll
+
+craftman,StrangelyKai
+craftmanurl,https://github.com/StrangelyKai/Ukagaka
+
+sakura.name,Skrunkly
+kero.name,
+
+icon,icon.ico
+
+sstp.allowunspecifiedsend,0
+
+balloon,Spirit Detective

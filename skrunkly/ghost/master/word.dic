@@ -1,0 +1,516 @@
+// OK LETS GOOOOO envelopes are gonna be HUGE
+
+d
+{
+	"\f[italic,false]\f[bold,false]"
+}
+
+i
+{
+	"\f[italic,true]"
+}
+
+b
+{
+	"\f[bold,true]"
+}
+
+hihello : nonoverlap
+{
+	"hi"
+	"hello"
+	"what's up"
+	"wassup"
+	"ello"
+	"sup"
+	"good day"
+	"g'day"
+}
+
+funnyname : nonoverlap
+{
+	"fart monster"
+	"hungry hungry hippos"
+	"goofball"
+	"bartholomew"
+	"silly little guy"
+	"sans undertale"
+	"pity party haver"
+	"my favourite loser"
+	"you hot topic wannabe"
+	"you blue gumball son of a bitch"
+}
+
+oa
+{
+	"O"
+	"A"
+	"o"
+	"a"
+}
+
+oas : all
+{
+for _i = 1; _i < (RAND(100) + 1) ; _i++
+{
+     "%(oa)"
+}
+}
+
+woah
+{
+	"W"
+	"w"
+	--
+    "%(oas)"
+	--
+	"H"
+	"h"
+}
+
+fuck
+{
+	"F"
+	"f"
+	--
+	"%(u)"
+	--
+	"C"
+	"c"
+	--
+	"K"
+	"k"
+}
+
+Uu
+{
+	"U"
+	"u"
+}
+
+u : all
+{
+for _i = 1; _i < (RAND(100) + 1) ; _i++
+{
+     "%(Uu)"
+}
+}
+
+haha : all
+{
+for _i = 1; _i < (RAND(100) + 1) ; _i++
+{
+     "%(ha)"
+}	
+}
+
+ha
+{
+	"h"
+	"H"
+	"a"
+	"A"
+}
+
+wob : all
+{
+for _i = 1; _i < (RAND(100) + 1) ; _i++
+{
+     "wob"
+}
+}
+
+murr
+{
+	"mur%(r)"
+}
+
+r : all
+{
+	for _i = 1; _i < (RAND(100) + 1) ; _i++
+	{
+		"r"
+	}
+}
+
+emotion : nonoverlap
+{
+	"happy"
+	"sad"
+	"fear"
+	"tired"
+	"bored"
+	"like im gonna die"
+	"like im gonna suddenly start screaming"
+	"like a microwave"
+	"like a calm but meloncholy grey cloud on a rainy day"
+	"like a child watching the droplets of rain race down the car window"
+	"like everyone around me is crying at a funeral but i dont know why i should be crying"
+	"nothing"
+	"like theres a cold wind blowing straight through me,\w8 as if i dont even exist"
+}
+
+goodbad : nonoverlap
+{
+	"ok"
+	"good"
+	"well"
+	"pleasantly"
+	"fine"
+	"excellent"
+	"favourably"
+	"acceptably"
+	"wonderfully"
+	"exceptionally"
+	
+	"bad"
+	"terrible"
+	"atrociously"
+	"awfully"
+	"shit"
+	"unacceptably"
+	"poorly"
+	"crappy"
+}
+
+a : all
+{
+for _i = 1; _i < (RAND(100) + 1) ; _i++
+{
+     "%(Aa)"
+}
+}
+
+Aa
+{
+	"A"
+	"a"
+}
+aan
+{
+	_item = _argv[0]
+	_first = SUBSTR(_item,0,1)
+	_first = TOLOWER(_first)
+	
+	if _first == "a" || _first == "e" || _first == "i" || _first == "o" || _first == "u"
+	{
+		"an"
+	}
+	else
+	{
+		"a"
+	}
+}
+
+item : nonoverlap
+{
+	"egg"
+	"powerful spell book"
+	"fruit bowl filled with keys"
+	"comically oversized keyring"
+	"ham sandwich cut into 4 triangles"
+	"dead battery"
+	"fart"
+	"small skrunly plushie"
+	"pat on the head"
+	"youtuber that has been shrunk and put into a jar"
+	"sand seal"
+	"shiny rock"
+	"turtle shell"
+	"stray piece of hair"
+	"bucket of paint"
+	"bottle of hairspray"
+	"box of hairdye"
+	"expired coupon"
+	"billboard with a toothpaste ad on it"
+	"demon"
+	"butterfly wings"
+	"fairy wings"
+	"statue of me"
+	"palm tree with a heart carved into it"
+	"giant mushroom tree"
+	"piece of scrap fabric"
+	"broken wooden bridge"
+	"apple with a worm sized hole in it"
+	"pineapple carved to look like a jack-o-lantern"
+	"empty glass jar"
+	"world wide web website"
+	"empty pokeball"
+	"bubble bath filled with rubber ducks"
+	"water bottle with a small red jacket on it"
+	"freezer drawer filled with snow"
+	"pair of broken 3d glasses"
+	"balloon filled with confetti"
+	"blanket with a suspicious yellow stain"
+	"mauled box of chocolates"
+	"witch's cauldren with the remainders of an unknown substance left in it"
+	"broken arcade machine"
+	"glass jar filled with fairy lights"
+	"deadly snail"
+	"miniture model of a coral reef"
+	"stolen box of girl scout cookies"
+	"muddy watercolour palette"
+	"scrapbook full of dried leaves"
+	"small but useful knife"
+	"chimkin nuggie"
+	"sweet old lady"
+	"tube of glitter glue"
+	"bottle of expired nail polish"
+	"giant button from a winter coat"
+	"chocolate chip cookie with the chocolate chips taken out"
+	"plastic bag of edible bugs"
+	"cork from a wine bottle"
+	"suspicious skeletal hand"
+	"copy of shrek 2 the game for the original xbox"
+	"innocuous laughter"
+	"sticky note with a drawing of deadpool on it"
+	"binder full of 9th grade science notes"
+	"hacked 3ds but the only game you can play is 'barbie: groom and glam pups'"
+	"empty cd case with your mother's father's mother's maiden name engraved into the plastic"
+	"friendly dancing sunflower"
+	"trashcan filled with snotty tissues"
+	"haunted raccoon"
+	"bottle of glue"
+	"a man with pancake-hands"
+}
+
+emoticon : nonoverlap
+{
+	":)"
+	":("
+	":D"
+	"D:"
+	":P"
+	"XP"
+	"XD"
+	"Xd"
+	":3"
+	">:)"
+	">:("
+	">:3"
+	":T"
+	":O"
+	":o"
+	">:O"
+	">:o"
+	"=)"
+	"=D"
+	"=P"
+	";("
+	":-)"
+	":-D"
+	">:["
+	"=O"
+	"=o"
+	"x3"
+	"X3"
+	":/"
+	"=/"
+	":|"
+	"=|"
+	"B)"
+	":>"
+	"=>"
+	"^^"
+	"^-^"
+	"^_^"
+	"o-o"
+	"O_O"
+	"o_O"
+	"x_x"
+	">.<"
+	">-<"
+	">_<"
+	"(-_-;)"
+	"(>w<)"
+	"-~-"
+	"o~o"
+	";-;"
+	"owo"
+	"OwO"
+	"uwu"
+	"UwU"
+	".-."
+	"._."
+	".w."
+	"-w-"
+	">:3c"
+	":3c"
+	"~-~"
+	"oAo"
+	"OAO"
+	"TWT"
+	"TwT"
+	"qwq"
+	"QWQ"
+	"QwQ"
+}
+
+creature : nonoverlap
+{
+	"mosquito"
+	"baby highland cow"
+	"puppy dog"
+	"grown ass man"
+}
+
+beep : nonoverlap
+{
+	"beep beep"
+	"meep meep"
+	"skrt skrt"
+	"boop boop"
+	"toot toot"
+	"choo choo"
+	"ding ding"
+	"ding dong"
+	"cheep cheep"
+	"tweet tweet"
+	"brr brr"
+	"ring ring"
+	"doot doot"
+	"peep peep"
+	"yum yum"
+	"yuck yuck"
+	"zoom zoom"
+	"woo woo"
+	"doop doop"
+	"grr grr"
+	"splat splat"
+	"borf borf"
+	"bwoop bwoop"
+	"boof boof"
+	"bonk bonk"
+	"bite bite"
+	"bwob bwob"
+	"wob wob"
+	"nom nom"
+	"bink bink"
+}
+
+meow : all
+{
+for _i = 1; _i < (RAND(100) + 1) ; _i++
+{
+     "meow"
+}
+}
+
+doingthing : nonoverlap
+{
+	"overworking yourself"
+	"overthinking"
+	"looking at me"
+	"listening"
+	"holding that rat"
+	"farting"
+	"pooping"
+	"screaming"
+	"ignoring me"
+}
+
+ext : nonoverlap
+{
+	"."
+	--
+	_ext = _argv[0]
+	
+    _img = ("png","jpg","jpeg","gif")
+    _music = ("mp3","mp4","wav")
+    _word = ("txt","pdf","docx")
+
+    if _ext == "img"; ANY(_img)
+    elseif _ext == "music"; ANY(_music)
+    elseif _ext == "word"; ANY(_word)
+    else; ANY(_img,_music,_word)
+}
+
+whywhen : nonoverlap
+{
+	"why"
+	"when"
+	"how"
+	"what"
+	"who"
+	"where"
+}
+
+lyrics : nonoverlap
+{
+	"LET OUR BODIES LAY,\nMARK OUR HEARTS WITH SHAME,\nLET OUR BLOOD IN VAIN,\nYOU FIND GOD IN PAIN" //The Foundations of Decay - MCR
+	"LET IT FLOOD\nLET IT FLOOD\nLET IT WASH AWAY" //The Foundations of Decay - MCR
+	"PO PI PO PI PO PO PI PO" //Po pi po - LamazeP (Hatsune Miku)
+	"rolling around at the speed of sound,\ngot places to go,\ngotta FOLLOW MY RAINBOW" //Escape from the City - Sonic
+	"YOURE LIVING A LIE,\w8\n STRAIGHT TO HELL,\w8\n STRAIGHT TO HELL" //IAGTKTPOTUSOA - Leathermouth
+}
+
+gender : nonoverlap
+{
+	"hatsune miku but trans"
+	"like ditto, it can change into anything"
+	"slime"
+	"wolf but in a trans girl way"
+	"sonic the hedgehog in a skirt"
+	"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	"shrek 2: the game, for the xbox"
+	"the main theme of the legend of zelda: tears of the kingdom"
+	"pixel art"
+	"little meow meow"
+	"an ominous empty forest full of fog"
+	"every gender all at once, but also none at the same time"
+	"a little silly, a little goofy even"
+	"gerard way in the desolation row music video"
+	"the music video for lovejoy's 'portrait of a blank slate'"
+}
+
+bodypart : nonoverlap
+{
+	_persons = persons
+	
+	"your"
+	--
+	" "
+	--
+	"%(_persons)"
+	--
+	if _persons == ""
+	{
+		""
+	}
+	else
+	{
+		" "
+	}
+	--
+	"arm"
+	"leg"
+	"kidney"
+	"lung"
+	"knee"
+	"elbow"
+	"shin"
+	"finger"
+	"toe"
+	"wrist"
+	"eye"
+	"ear"
+	"eyebrow"
+	"hand"
+	--
+	""
+	"s"
+}
+
+bodypartss
+{
+	"a %(ANY('scoop,handful,bite,chunk')) of your thigh"
+}
+
+persons : nonoverlap
+{
+	""
+	"friend's"
+	"co-worker's"
+	"cellmate's"
+	"significant other's"
+}

@@ -1,0 +1,16 @@
+charset,UTF-8
+type,shell
+
+name,Default Shell
+craftman,StrangelyKai
+craftmanurl,https://github.com/StrangelyKai/Ukagaka
+
+seriko.alignmenttodesktop,free
+seriko.use_self_alpha,1
+
+sakura.bindgroup1.name,Lines,Eyestrain
+sakura.bindgroup2.name,Lines,Negative
+sakura.bindgroup3.name,Lines,Galaxy
+sakura.bindgroup4.name,Lines,Rainbow Galaxy
+sakura.bindgroup5.name,Lines,Static
+sakura.bindgroup6.name,Lines,EYE HORROR
