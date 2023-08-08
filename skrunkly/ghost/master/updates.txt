@@ -6,7 +6,7 @@ file,ghost/master/emerg.dicc7cb6eacd3262003fef909c382a6fefesize=351date=2023-
 file,ghost/master/icon.icoe45db3bd1697d2943caa12ed26ba82e9size=100970date=2023-05-16T13:58:06
 file,ghost/master/meta.dicaa6632d142df820e39c630a379bad233size=3559date=2023-05-07T06:47:17
 file,ghost/master/mouse.dicf8cb8a0e5a96fff929eb3a982cfd7ad2size=1463date=2023-06-16T00:04:55
-file,ghost/master/other.dic4fcaec5748fceba13a9aaed2113b4edfsize=7009date=2023-06-14T07:38:20
+file,ghost/master/other.dicd8d81927d5c8de8ebc6f1466212cd7ddsize=7001date=2023-08-08T23:01:17
 file,ghost/master/sakura_menu.dicddb4f476892f18e20f10f47fa7f5f46bsize=1980date=2023-05-26T15:33:11
 file,ghost/master/word.dic6171ef3da552d4b1dcc6faa1db8034c8size=7786date=2023-07-06T16:24:10
 file,ghost/master/yaya.dll56e3af56c88e696cea1f39d53b239cefsize=880640date=2022-09-11T09:18:59
