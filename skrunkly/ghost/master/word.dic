@@ -1,19 +1,24 @@
 // OK LETS GOOOOO envelopes are gonna be HUGE
 
-d
-{
-	"\f[italic,false]\f[bold,false]"
-}
+d; {"\f[italic,false]\f[bold,false]"}
+i; {"\f[italic,true]"}
+b; {"\f[bold,true]"}
 
-i
-{
-	"\f[italic,true]"
-}
+b_round; {"\b[0]"}
+b_roundsq; {"\b[8]"}
+b_fluff; {"\b[16]"}
+b_fluffsq; {"\b[24]"}
+b_spike; {"\b[32]"}
+b_spikesq; {"\b[40]"}
+b_whisp; {"\b[48]"}
+b_whispsq; {"\b[56]"}
+b_think; {"\b[64]"}
+b_thinksq; {"\b[72]"}
+b_square; {"\b[80]"}
+b_lines; {"\b[88]"}
+b_spook; {"\b[96]"}
 
-b
-{
-	"\f[bold,true]"
-}
+b_random; {"%(b_round)";"%(b_roundsq)";"%(b_fluff)";"%(b_fluffsq)";"%(b_spike)";"%(b_spikesq)";"%(b_whisp)";"%(b_whispsq)";"%(b_think)";"%(b_thinksq)";"%(b_square)";"%(b_lines)";"%(b_spook)"}
 
 hihello : nonoverlap
 {
@@ -211,7 +216,7 @@ item : nonoverlap
 	"ham sandwich cut into 4 triangles"
 	"dead battery"
 	"fart"
-	"small skrunly plushie"
+	"small skrunkly plushie"
 	"pat on the head"
 	"youtuber that has been shrunk and put into a jar"
 	"sand seal"
@@ -272,6 +277,77 @@ item : nonoverlap
 	"haunted raccoon"
 	"bottle of glue"
 	"a man with pancake-hands"
+}
+
+itemss : nonoverlap
+{
+	"eggs"
+	"powerful spell books"
+	"fruit bowls filled with keys"
+	"comically oversized keyrings"
+	"ham sandwiches cut into 4 triangles"
+	"dead batteries"
+	"farts"
+	"small skrunkly plushies"
+	"pats on the head"
+	"youtubers that have been shrunk and put into a jar"
+	"sand seals"
+	"shiny rocks"
+	"turtle shells"
+	"stray pieces of hair"
+	"buckets of paint"
+	"bottles of hairspray"
+	"boxes of hairdye"
+	"expired coupons"
+	"billboards with toothpaste ads on it"
+	"demons"
+	"butterfly wings"
+	"fairy wings"
+	"statues of me"
+	"palm trees with hearts carved into them"
+	"giant mushroom trees"
+	"pieces of scrap fabric"
+	"broken wooden bridges"
+	"apples with worm sized holes in it"
+	"pineapples carved to look like jack-o-lanterns"
+	"empty glass jars"
+	"world wide web websites"
+	"empty pokeballs"
+	"bubble baths filled with rubber ducks"
+	"water bottles with a small red jacket on it"
+	"freezer drawers filled with snow"
+	"pairs of broken 3d glasses"
+	"balloons filled with confetti"
+	"blankets with suspicious yellow stains"
+	"mauled boxes of chocolates"
+	"witch's cauldrens with the remainders of an unknown substance left in them"
+	"broken arcade machines"
+	"glass jars filled with fairy lights"
+	"deadly snails"
+	"miniture models of coral reefs"
+	"stolen boxes of girl scout cookies"
+	"muddy watercolour palettes"
+	"scrapbooks full of dried leaves"
+	"small but useful knives"
+	"chimkin nuggies"
+	"sweet old ladies"
+	"tubes of glitter glue"
+	"bottles of expired nail polish"
+	"giant buttons from winter coats"
+	"chocolate chip cookies with the chocolate chips taken out"
+	"plastic bags of edible bugs"
+	"corks from wine bottles"
+	"suspicious skeletal hands"
+	"copies of shrek 2 the game for the original xbox"
+	"innocuous laughters"
+	"sticky notes with a drawing of deadpool on it"
+	"binders full of 9th grade science notes"
+	"empty cd cases with your mother's father's mother's maiden name engraved into the plastic"
+	"friendly dancing sunflowers"
+	"trashcans filled with snotty tissues"
+	"haunted raccoons"
+	"bottles of glue"
+	"man with pancake-hands"
 }
 
 emoticon : nonoverlap
@@ -346,10 +422,47 @@ emoticon : nonoverlap
 	"QwQ"
 }
 
+kaomoji : nonoverlap
+{
+	"\f[height,14]"
+	--
+	_moji = _argv[0]
+	
+    _happy = ("☆:.｡.o(≧▽≦)o.｡.:☆","(´ ∀ ` *)","(〃＾▽＾〃)","\(★ω★)/","(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧","(ﾉ´ヮ`)ﾉ*: ･ﾟ","(„• ֊ •„)","(⁀ᗢ⁀)","｡+ﾟ.。+。(´ω｀*)♪♪","(´▽`)","(〜￣▽￣)〜","_(:3 」∠)_","°˖✧◝(⁰▿⁰)◜✧˖°","٩(ˊᗜˋ*)و ♡","°ʚ(*´꒳`*)ɞ°","(⌒ω⌒)","(｡◝‿◜｡)","(((o(*ﾟ▽ﾟ*)o)))","(*´∀｀*)","☆〜（ゝ。∂）","(((o(>w<)o)))","(つ◕◕)つ","(づ๑•ᴗ•๑)づ♡","৻( •̀ ᗜ •́ ৻)","(((o(*ﾟ▽ﾟ*)o)))")
+    _sad = ("(｡╯︵╰｡)","(╥_╥)","｡ﾟヽ(ﾟ´Д｀)ﾉﾟ｡","。：゜(；´∩｀；)゜：。","(-ω-、)","｡･ﾟﾟ*(>д<)*ﾟﾟ･｡")
+    _angry = ("(＃`Д´)","ヽ( `д´*)ノ","凸( ` ﾛ ´ )凸","Q(`⌒´Q)","(˶˃⤙˂˶)")
+	_cat = ("(=^･ω･^=)","(=`ω´=)","(=^-ω-^=)","(=^..^=)","≽^- ˕ -^≼","/ᐠ - ˕ -マ","ᓚᘏᗢ")
+	_sleepy = ("(_ _ )..zZ","(⸝⸝ᴗ﹏ᴗ⸝⸝) ᶻ 𝗓 𐰁","/ᐠ - ˕-マ｡˚ᶻ 𝗓 ")
+	_bunny = ("૮꒰˶  - ˕ -꒱ა","꒰ᐢ. .ᐢ꒱","૮₍ ´ ꒳ `₎ა","₊ ⊹₍ᐢᐢ₎","૮ ˶ᵔ ᵕ ᵔ˶ ა","₍ᐢ. ༝ .ᐢ₎","(づ˶•༝•˶)づ♡","૮(˶˃ᆺ˂˶)ა","૮₍ ´• ˕ •` ₎ა","₍ᐢ. ̫.ᐢ₎","૮ ˶ᵔ ᵕ ᵔ˶ ა","૮꒰ྀི∩´ ᵕ `∩꒱ྀིა","૮₍_   ̫ _ ₎ა ♡","૮₍ ´ ꒳ `₎ა")
+
+    if _moji == "happy"; ANY(_happy)
+    elseif _moji == "sad"; ANY(_sad)
+    elseif _moji == "angry"; ANY(_angry)
+	elseif _moji == "cat"; ANY(_cat)
+	elseif _moji == "sleepy"; ANY(_sleepy)
+	elseif _moji == "bunny"; ANY(_bunny)
+    else; ANY(_happy,_sad,_angry,_cat,_sleepy,_bunny)
+}
+
+//this turned into ascii and also kaomoji that are multiple lines, just to keep the regular ones neater
+asciiart
+{
+	_ascii = _argv[0]
+	
+	_cat = ("\b[2]%(b)\f[height,3]⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀        \n⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀       \n⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀      \n⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀    \n ⠀⠀⠀ ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀   \n⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣠⣤⣤⣼⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀  \n⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀  \n⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀  \n⠀⠀⠀⠘⣿⣿⣿⣿⠟⠁⠀⠀⠀⠹⣿⣿⣿⣿⣿⠟⠁⠀⠀⠹⣿⣿⡿⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀⠀⢼⣿⠀⢿⣿⣿⣿⣿⠀⣾⣷⠀⠀⢿⣿⣷⠀⠀⠀⠀⠀    \n⠀⠀⠀⢠⣿⣿⣿⣷⡀⠀⠀⠈⠋⢀⣿⣿⣿⣿⣿⡀⠙⠋⠀⢀⣾⣿⣿⠀⠀⠀⠀⠀  \n⢀⣀⣀⣀⣿⣿⣿⣿⣿⣶⣶⣶⣶⣿⣿⣿⣿⣾⣿⣷⣦⣤⣴⣿⣿⣿⣿⣤⠤⢤⣤⡄\n⠈⠉⠉⢉⣙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⣀⣀⣀⡀⠀\n⠐⠚⠋⠉⢀⣬⡿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣥⣀⡀⠈⠀⠈⠛\n⠀⠀⠴⠚⠉⠀⠀⠀⠉⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠋⠁⠀⠀⠀⠉⠛⠢⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀","%(b)     ☆ *　. 　☆\n　　 . ＿∧　∩　* ☆\n* ☆ ( ・∀・)/ .\n　. ⊂　　 ノ* ☆\n☆ * (つ ノ .☆\n　　 (ノ","%(b)∧,,,∧  \n(„. .„)\n🍓⊂ )","%(b)\f[height,8]⣴⡿⠶⠀⠀⠀⣦⣀⣴⠀⠀⠀⠀\n⣿⡄⠀⠀⣠⣾⠛⣿⠛⣷⠀⠿⣦\n⠙⣷⣦⣾⣿⣿⣿⣿⣿⠟⠀⣴⣿\n⠀⣸⣿⣿⣿⣿⣿⣿⣿⣾⠿⠋⠁\n⠀⣿⣿⣿⠿⡿⣿⣿⡿⠀⠀⠀⠀\n⢸⣿⡋⠀⠀⠀⢹⣿⡇⠀⠀⠀⠀\n⣿⡟⠀⠀⠀⠀⠀⢿⡇⠀⠀⠀⠀\n⠉⠁⠀⠀⠀⠀⠀⠸⠇⠀⠀⠀⠀","%(b) ╱|、\n(•˕ •  7\n |、⁻〵ノ)\n じしˍ,)ノ")
+	_skrunkly = ("\f[height,4]⠀⠀⠀⠀⠀⠀⠀⠀⡟⠛⠵⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⣫⠀⠀⠀⠈⠉⠑⠦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣠⡤⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⣛⡇⠀⠀⣠⠶⠯⠛⠛⠓⠒⠦⢤⣠⣰⡾⠟⠛⠉⠁⠀⣼⠃⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⢹⡇⣴⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠳⣄⠀⠀⠀⠀⣼⠁⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠏⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡂⠀⢀⣾⠁⠀⠀⠀\n⠀⠀⠀⠀⠀⣠⠶⠛⢹⡏⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⣤⠀⠀⠀⢸⡇⠀⣼⠃⠀⠀⠀⠀\n⠀⠀⣠⡴⠛⠁⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⣤⣶⣤⣄⠀⠀⠉⠀⠀⠀⠀⣿⢰⠏⠀⠀⠀⠀⠀\n⠀⠀⠉⠉⠉⣻⡇⠀⠀⣿⡀⠀⠀⠀⠀⠀⠙⠛⠿⠟⠀⠀⠀⠀⠀⠀⠀⣿⣏⡀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⣤⠟⠁⠀⠀⠀⠻⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣾⠇⠀⠉⠳⣄⡀⠀⠀\n⠀⠀⠀⠛⠿⠿⠿⠭⠭⠶⠦⠬⠹⠷⣦⣤⣤⣤⣤⣤⣤⣴⣺⠽⠋⠀⠠⣤⢤⣉⣷⡄⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠈⠛⠻⣶⣦⣄⡘⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠋⠀⠀")
+	_bunny = ("%(b)\f[height,15] /)/)\n( . .)\n( づ♡","%(b)\f[height,15]       /)    /)\n    ꒰ ˶• ༝ •˶꒱\n  ○( づ♡૮)","%(b)\f[height,15] ( \\ ( \\ \n ( 𐐃ᵕ𐐃)\nପ/つ🍮")
+	
+	if _ascii == "cat"; ANY(_cat)
+	elseif _ascii == "skrunkly"; ANY(_skrunkly)
+	elseif _ascii == "bunny"; ANY(_bunny)
+	else; ANY(_cat,_skrunkly,_bunny)
+}
+
 creature : nonoverlap
 {
 	"mosquito"
-	"baby highland cow"
+	"highland cow"
 	"puppy dog"
 	"grown ass man"
 }
@@ -513,4 +626,44 @@ persons : nonoverlap
 	"co-worker's"
 	"cellmate's"
 	"significant other's"
+}
+
+s_word : nonoverlap
+{
+	""
+	"sickeningly ";"sadly ";"satisfyingly ";"secretly ";"seemingly "
+	--
+	"shit";"sadistic";"sexy";"sacred";"sacrilegious";"sad";"salted";"salty";"sappy";"sanitary";"sarcastic";"sassy";"saucy";"scaly";"scary"
+	"scented";"screaming";"scrawny";"scraggly";"scribbled";"scruffy";"scrumptious";"seasick";"self-absorbed";"self-centered"
+	"self-confident";"self-indulgent";"selfish";"sellable";"sensitive";"shabby";"shady";"shameless";"sharpened";"shiny";"short";"shy";"sick"
+	"sinful";"skilled";"sleepy";"smart";"smelly";"smug";"sneaky";"satan"
+}
+
+randomnumbersdialogue
+{
+	_num1 = RAND(100)
+	_num2 = 100 - _num1
+	
+	"%(_num1)% %(thing)\n\n[half]%(_num2)% %(thing)\n\n[half]100% skrunkly"
+}
+
+thing : nonoverlap
+{
+	"%(beep)";"%(creature)";"%(gender)";"%(whywhen)";"%(s_word)";"%(emoticon)";"%(item)";"%(itemss)"
+	"pure";"evil";"water";"shittalking";"biting";"rabid";"ears";"money-back-guarantee"
+}
+
+twister : nonoverlap
+{
+	"left foot"
+	"right foot"
+	"left hand"
+	"right hand"
+	--
+	" "
+	--
+	"red"
+	"blue"
+	"yellow"
+	"green"
 }

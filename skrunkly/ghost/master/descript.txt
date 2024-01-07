@@ -6,7 +6,7 @@ type,ghost
 shiori,yaya.dll
 
 craftman,StrangelyKai
-craftmanurl,https://github.com/StrangelyKai/Ukagaka
+craftmanurl,https://github.com/StrangelyKai
 
 sakura.name,Skrunkly
 kero.name,

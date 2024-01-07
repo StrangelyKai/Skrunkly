@@ -15,10 +15,10 @@ OnMouseDoubleClick
 			{
 				OnTalkRateMenu
 			}
-			elseif reference4 == "rightfoot"
-			{
-				OnTestingFunction
-			}
+			// elseif reference4 == "rightfoot"
+			// {
+				// OnStatsPage
+			// }
 			elseif reference4 == "righthand"
 			{
 				OnHoldHands
@@ -41,6 +41,132 @@ OnMouseDoubleClick
 			
 		}
 	}
+}
+
+OnNeedlePoke
+{
+	if reference0 == 0 //Sakura
+	{
+		needlepokes++
+		case reference1
+		{
+			when "Eggdle"
+			{
+				"eggy"
+			    "fried egg for dinner tonight"
+			}
+			when "Hands Included"
+			{
+				"pat the skrunkly"
+			}
+			when "Safety Needle"
+			{
+				"safety ouch"
+			}
+			when "Tiny Pokey Pixels"
+			{
+				"small ouch"
+				"so smol, yet so ow"
+			}
+			when "Wobbly Mouse Art"
+			{
+				"wobble wobble wobble wobble"
+			}
+			others
+			{
+				"sharp"
+		        "pointy"
+		        "ouchy"
+			}
+		}
+	}
+}
+
+//Referenced from Needle, with help from Zi
+OnMouseGesture
+{
+	if accessmode == 0
+	{
+		if !ISVAR("gesture"); gesture = IARRAY
+		if reference5 == "end"
+		{
+			foreach gesture; _g
+			{
+				if _g == "circle.cw"
+				{
+					trgesture = "up"
+					OnTalkRateGesture
+				}
+				elseif _g == "circle.ccw"
+				{
+					trgesture = "down"
+					OnTalkRateGesture
+				}
+			}
+		
+			_gesture = TOSTR(gesture)
+			gesture = IARRAY
+		
+			if _gesture == "right,left,right,left" || _gesture == "left,right,left,right"
+			{
+				aitalkinterval = 0
+				--
+				OnTalkRateCheck
+				--
+				"Talkrate: %(ltalkrate)"
+			}
+			elseif _gesture == "left_down,right,left_down"
+			{
+				//"success"
+			}
+		}
+		else; gesture ,= reference5
+	}
+}
+
+OnTalkRateGesture
+{
+	OnTalkRateCheck
+	
+	if trgesture == "up"
+	{
+		if aitalkinterval == 0; aitalkinterval = 30
+		elseif aitalkinterval == 30; aitalkinterval = 60
+		elseif aitalkinterval == 60; aitalkinterval = 120
+		elseif aitalkinterval == 120; aitalkinterval = 180
+		elseif aitalkinterval == 180; aitalkinterval = 240
+		elseif aitalkinterval == 240; aitalkinterval = 300
+		elseif aitalkinterval == 300; aitalkinterval = 0
+		--
+		OnTalkRateCheck
+		--
+		"Talkrate: %(ltalkrate)"
+	}
+	elseif trgesture == "down"
+	{
+		if aitalkinterval == 0; aitalkinterval = 300
+		elseif aitalkinterval == 30; aitalkinterval = 0
+		elseif aitalkinterval == 60; aitalkinterval = 30
+		elseif aitalkinterval == 120; aitalkinterval = 60
+		elseif aitalkinterval == 180; aitalkinterval = 120
+		elseif aitalkinterval == 240; aitalkinterval = 180
+		elseif aitalkinterval == 300; aitalkinterval = 240
+		--
+		OnTalkRateCheck
+		--
+		"Talkrate: %(ltalkrate)"
+	}
+}
+
+OnTalkRateCheck
+{
+	ltalkrate = "Off"
+	if aitalkinterval == 30; ltalkrate = "30 seconds"
+	elseif aitalkinterval == 60; ltalkrate = "1 minute"
+	elseif aitalkinterval == 120; ltalkrate = "2 minutes"
+	elseif aitalkinterval == 180; ltalkrate = "3 minutes"
+	elseif aitalkinterval == 240; ltalkrate = "4 minutes"
+	elseif aitalkinterval == 300; ltalkrate = "5 minutes"
 }
 
 OnMouseWheel
@@ -71,25 +197,43 @@ OnMouseMove.Sakura
 
 OnPatPat : nonoverlap
 {
+	"%(b_fluff)"
+	patpatv++
+	--
 	"Petting??"
 	"pat pat pat"
 	"pet pet pet"
 	"you pat?"
 	"fluff fluff"
 	"floof floof"
+	"puff puff"
+	"%(kaomoji('happy'))"
+	"%(kaomoji('cat'))"
+	"%(kaomoji('bunny'))"
 }
 
 OnHoldHands : nonoverlap
 {
+	holdhandv++
+	--
 	"holdin hands"
 	"i didnt wash my hands"
+	"my hands are shaking"
+	"%(kaomoji('happy'))"
+	"%(kaomoji('cat'))"
+	"%(kaomoji('bunny'))"
 }
 
 OnBoop : nonoverlap
 {
+	boopv++
+	--
 	"boop"
 	"bloop"
 	"doop"
+	"%(kaomoji('happy'))"
+	"%(kaomoji('cat'))"
+	"%(kaomoji('bunny'))"
 }
 
 OnMouseLeaveAll
