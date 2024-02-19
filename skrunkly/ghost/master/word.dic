@@ -520,6 +520,31 @@ doingthing : nonoverlap
 	"pooping"
 	"screaming"
 	"ignoring me"
+	"accusing me of heinous crimes"
+	"admiring me in all my beauty"
+	"advising me against tax fraud"
+	"broadcasting your childhood trauma"
+	"bringing me into this"
+}
+
+that
+{
+	"burnt down a government building"
+	"shit bricks at the thought of interacting with another human being"
+	"gave up the opportunity to cure deadly diseases to become a youtuber"
+	"is a horse"
+	"puts barbeque sauce on perfectly fine chicken noodles"
+	"enjoys watching paint dry"
+	"has a bob and is very angry"
+	"plays the ukelele but only knows the song 'riptide'"
+	"hasnt cleaned their house since 1481"
+	"lives in a society"
+	"gets excited every time they see a puppy"
+	"drums on their desk and pretends theyre in a band"
+	"believes they are the mayor of idiotville"
+	"cried for hours after losing progress in a game about an icecube"
+	"hasn't left the house in months"
+	"need therapy"
 }
 
 ext : nonoverlap
@@ -550,11 +575,11 @@ whywhen : nonoverlap
 
 lyrics : nonoverlap
 {
-	"LET OUR BODIES LAY,\nMARK OUR HEARTS WITH SHAME,\nLET OUR BLOOD IN VAIN,\nYOU FIND GOD IN PAIN" //The Foundations of Decay - MCR
-	"LET IT FLOOD\nLET IT FLOOD\nLET IT WASH AWAY" //The Foundations of Decay - MCR
-	"PO PI PO PI PO PO PI PO" //Po pi po - LamazeP (Hatsune Miku)
-	"rolling around at the speed of sound,\ngot places to go,\ngotta FOLLOW MY RAINBOW" //Escape from the City - Sonic
-	"YOURE LIVING A LIE,\w8\n STRAIGHT TO HELL,\w8\n STRAIGHT TO HELL" //IAGTKTPOTUSOA - Leathermouth
+	"%(b_spike)LET OUR BODIES LAY,\nMARK OUR HEARTS WITH SHAME,\nLET OUR BLOOD IN VAIN,\nYOU FIND GOD IN PAIN" //The Foundations of Decay - MCR
+	"%(b_spike)LET IT FLOOD\nLET IT FLOOD\nLET IT WASH AWAY" //The Foundations of Decay - MCR
+	"%(b_spike)PO PI PO PI PO PO PI PO" //Po pi po - LamazeP (Hatsune Miku)
+	"rolling around at the speed of sound,\ngot places to go,\ngotta %(b_spike)FOLLOW MY RAINBOW" //Escape from the City - Sonic
+	"%(b_spike)YOURE LIVING A LIE,\w8\nSTRAIGHT TO HELL,\w8\nSTRAIGHT TO HELL" //IAGTKTPOTUSOA - Leathermouth
 }
 
 gender : nonoverlap
@@ -564,7 +589,7 @@ gender : nonoverlap
 	"slime"
 	"wolf but in a trans girl way"
 	"sonic the hedgehog in a skirt"
-	"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	"%(b_spike)AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	"shrek 2: the game, for the xbox"
 	"the main theme of the legend of zelda: tears of the kingdom"
 	"pixel art"
@@ -666,4 +691,82 @@ twister : nonoverlap
 	"blue"
 	"yellow"
 	"green"
+}
+
+food : nonoverlap
+{
+	"%(flavour) chips"
+	"%(flavour) chocolate"
+	"%(flavour) jam"
+	"%(flavour) jelly"
+	"%(flavour) nintendo switch cartridges"
+	"%(flavour) cake"
+	"%(flavour) sauce"
+	"eggs"
+	"steak"
+	"ashes"
+	"pizza"
+	"garlic bread"
+	""
+}
+
+flavour
+{
+	"strawberry"
+	"blueberry"
+	"berry"
+	"apple"
+	"grease"
+	"tomato"
+	"fruity"
+	"%(chocolatefl)"
+	"salt"
+	"birthday cake"
+	"bee"
+	"cheese"
+	"pumpkin"
+	"plastic"
+	"bug"
+	"webcam"
+	"blood"
+	"snot"
+	if nsfw == 1; "cum"
+	--
+	" flavoured"
+}
+
+chocolatefl
+{
+	"chocolate"
+	"white chocolate"
+	"dark chocolate"
+	"milk chocolate"
+}
+
+era
+{
+	"angry"
+	"shitting"
+	"angry shitting"
+	"sharting"
+	"crying myself to sleep"
+	"monkey shit"
+	"gas station food"
+	"rat"
+	"germ"
+	"cheese"
+	"villain"
+	"cool guy being cool"
+	"lizard"
+	"gayass bitch"
+	"fart"
+	"hangry"
+}
+
+shoutout
+{
+	"autism"
+	"the gays"
+	"me for enduring this bullshit"
+	"my mum"
 }

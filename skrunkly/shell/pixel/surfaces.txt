@@ -1,0 +1,66 @@
+descript
+{
+	version,1
+}
+
+//—————————————————————————————— Sakura surfaces ——————————————————————————————
+
+surface0
+{
+	collisionex1,leftear,region,collision0.png,255,0,13
+	collisionex2,rightfoot,region,collision0.png,94,255,0
+	collisionex3,rightear,region,collision0.png,255,81,0
+	collisionex4,leftfoot,region,collision0.png,255,247,0
+	collisionex5,head,region,collision0.png,0,77,255
+        collisionex6,tummy,region,collision0.png,255,0,248
+        collisionex7,nose,region,collision0.png,117,0,255
+        collisionex8,lefthand,region,collision0.png,0,255,161
+        collisionex9,righthand,region,collision0.png,0,226,255
+
+
+// - dressups
+
+//eyestrain
+animation1.interval,bind
+animation1.pattern0,overlay,1,0,0,0
+
+//negative
+animation2.interval,bind
+animation2.pattern0,overlay,2,0,0,0
+
+//galaxy
+animation3.interval,bind
+animation3.pattern0,overlay,3,0,0,0
+
+//rainbow
+animation4.interval,bind
+animation4.pattern0,overlay,4,0,0,0
+
+//static
+animation5.interval,bind
+animation5.pattern0,overlay,5,0,0,0
+
+}
+
+char0.tooltips
+{
+leftear,Preferences
+rightear,Talk Rate
+}
+
+sakura.cursor
+{
+mouseup0,head,system:hand
+mousedown0,head,system:grip
+
+mouseup1,tummy,system:arrow
+
+mouseup2,righthand,system:hand
+mousedown2,righthand,system:grip
+
+mouseup3,lefthand,system:hand
+mousedown3,lefthand,system:grip
+
+mouseup1,rightfoot,system:arrow
+mouseup1,leftfoot,system:arrow
+}

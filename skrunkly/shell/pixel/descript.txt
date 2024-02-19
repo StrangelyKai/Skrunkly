@@ -1,7 +1,7 @@
 charset,UTF-8
 type,shell
 
-name,Default Shell
+name,Pixel Shell
 craftman,StrangelyKai
 craftmanurl,https://github.com/StrangelyKai/Ukagaka
 
@@ -13,7 +13,6 @@ sakura.bindgroup2.name,Lines,Negative
 sakura.bindgroup3.name,Lines,Galaxy
 sakura.bindgroup4.name,Lines,Rainbow Galaxy
 sakura.bindgroup5.name,Lines,Static
-sakura.bindgroup6.name,Lines,EYE HORROR
 
 menu.background.bitmap.filename,menu_background.png
 menu.foreground.bitmap.filename,menu_foreground.png

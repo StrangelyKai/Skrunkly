@@ -52,3 +52,10 @@ sakura.bindgroup121.name,Inner,Genderfluid
 sakura.bindgroup122.name,Inner,Progress
 sakura.bindgroup123.name,Inner,Demisexual
 sakura.bindgroup124.name,Inner,Agender
+
+menu.background.bitmap.filename,menu_background.png
+menu.foreground.bitmap.filename,menu_foreground.png
+menu.sidebar.bitmap.filename,menu_sidebar.png
+
+menu.foreground.alignment,lefttop + repeatx + repeaty
+menu.background.alignment,lefttop + repeatx + repeaty

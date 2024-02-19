@@ -72,6 +72,25 @@ OnNeedlePoke
 			{
 				"wobble wobble wobble wobble"
 			}
+			when "Birthday Needle"
+			{
+				"nom"
+				"yummy"
+				"thank you for this meal"
+			}
+			when "Colored Pencils"
+			{
+				"neatly coloured"
+				"coloured ouch"
+			}
+			when "Foil"
+			{
+				"my plans have been foiled"
+			}
+			when "Syringe"
+			{
+				"Please don't take my blood."
+			}
 			others
 			{
 				"sharp"
