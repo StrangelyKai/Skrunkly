@@ -1,4 +1,4 @@
-SKRUNKLY!! [v1.6]
+SKRUNKLY!! [v1.5]
 
 Content Warnings:
 - Swearing
@@ -18,4 +18,4 @@ Note: If you're a code crawler, you will come across nsfw dialogue.
 Credits:
 Coding, Drawing, Writing: StrangelyKai (Me) - https://github.com/StrangelyKai
 Simplicity Template and Code Snippets: Zichqec - https://ukagaka.zichqec.com/
-Dialogue Contributors: Zichqec, Galla
+Dialogue Contributors: Zichqec, Galla, various online friends

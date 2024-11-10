@@ -347,7 +347,7 @@ itemss : nonoverlap
 	"trashcans filled with snotty tissues"
 	"haunted raccoons"
 	"bottles of glue"
-	"man with pancake-hands"
+	"men with pancake-hands"
 }
 
 emoticon : nonoverlap
@@ -499,6 +499,7 @@ beep : nonoverlap
 	"wob wob"
 	"nom nom"
 	"bink bink"
+	"bap bap"
 }
 
 meow : all
@@ -661,7 +662,7 @@ s_word : nonoverlap
 	"shit";"sadistic";"sexy";"sacred";"sacrilegious";"sad";"salted";"salty";"sappy";"sanitary";"sarcastic";"sassy";"saucy";"scaly";"scary"
 	"scented";"screaming";"scrawny";"scraggly";"scribbled";"scruffy";"scrumptious";"seasick";"self-absorbed";"self-centered"
 	"self-confident";"self-indulgent";"selfish";"sellable";"sensitive";"shabby";"shady";"shameless";"sharpened";"shiny";"short";"shy";"sick"
-	"sinful";"skilled";"sleepy";"smart";"smelly";"smug";"sneaky";"satan"
+	"sinful";"skilled";"sleepy";"smart";"smelly";"smug";"sneaky";"satan";"sweet"
 }
 
 randomnumbersdialogue
@@ -707,7 +708,6 @@ food : nonoverlap
 	"ashes"
 	"pizza"
 	"garlic bread"
-	""
 }
 
 flavour
@@ -731,6 +731,7 @@ flavour
 	"blood"
 	"snot"
 	if nsfw == 1; "cum"
+	"dirty laundry bin"
 	--
 	" flavoured"
 }
@@ -761,6 +762,11 @@ era
 	"gayass bitch"
 	"fart"
 	"hangry"
+	"hand-wiggling"
+	"slay"
+	"taking care of myself"
+	"murder"
+	"lying"
 }
 
 shoutout
@@ -769,4 +775,23 @@ shoutout
 	"the gays"
 	"me for enduring this bullshit"
 	"my mum"
+	"my therapist"
+}
+
+magic
+{
+	"perfectly toasted bread"
+	"putting cereal before milk"
+	"having self restraint"
+	"friendship"
+	"dad saying hes proud of you"
+	"charles entertainment cheese"
+}
+
+cursed
+{
+	"the pillow warmer"
+	if nsfw == 1; "people who erp on ponytown"
+	"me"
+	"the crushing weight of disappointing your parents"
 }

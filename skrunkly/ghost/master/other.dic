@@ -37,7 +37,7 @@ OnKeyPress
 	if reference0 == "f1"; "\![open,readme]"
 	elseif reference0 == "t"; OnAiTalk
 	elseif reference0 == "r"; OnLastTalk
-	elseif reference0 == "g"; "\![change,ghost,Skrunkly]"
+	elseif SHIORI3FW.DebugMode && reference0 == "g"; "\![change,ghost,Skrunkly]"
 	//38,38,40,40,37,39,37,39,66,65,13
 	elseif reference1 == 38 || reference1 == 40 || reference1 == 37 || reference1 == 39 || reference1 == 66 || reference1 == 65 || reference1 == 13
 	{
@@ -123,7 +123,7 @@ OnClickCookie
 
 On_homeurl
 {
-	"https://raw.githubusercontent.com/StrangelyKai/Skrunkly/main/skrunkly"
+	"https://raw.githubusercontent.com/StrangelyKai/Skrunkly/main/skrunkly/"
 }
 
 //—————————————————————————————— Network Update ——————————————————————————————
@@ -303,4 +303,38 @@ Wobble
 		_word += "\_l[@%(_X),%(_Y)]\f[height,%(_Sz)]" + _let //Add to the display
 	}
 	_word
+}
+
+//Written by Zichqec https://zichqec.github.io/s-the-skeleton/
+//This code automates adding simple information to SSP's AI graph, for if you want a simple count of things like your number of randomtalks, the number of entries in an envelope, etc.
+//The AI graph can do a lot more besides just this! Read up about it on Ukadoc here: https://ukagakadreamteam.github.io/ukadoc/manual/list_shiori_resource.html#getaistateex
+//Note: if things are set up wrong, opening the AI graph may cause SSP to crash. Just be a little cautious and make sure you follow the instructions.
+On_getaistateex : all
+{
+    _graph = AI_Graphs[reference0]
+    if _graph != ""
+    {
+        _items = SPLIT(_graph,",")
+        for _i = 0; _i < ARRAYSIZE(_items); _i++
+        {
+            if _i > 0; ","
+            OUTPUTNUM("%(_items[_i])")
+        }
+        C_BYTE1
+        for _i = 0; _i < ARRAYSIZE(_items); _i++
+        {
+            if _i > 0; ","
+            "%(_items[_i])"
+        }
+    }
+}
+
+//Each entry in this array is a new page that will be added to the AI Graph.
+//You can add as many entries as you want, and each one will be a new page.
+//You can add as many items to the entries as you want, just have at least 3 or SSP will crash when trying to load the graph.
+//Obviously, if you add too many, it will at some point become very overwhelming to look at. You might try adding some sort of variables to control when each option is output.
+//Make sure you write the NAMES of the functions/envelopes you want it to count, NOT a function call like %(name)
+AI_Graphs : array
+{
+    "RandomTalk,OnPatPat,OnHoldHands,OnBoop"
 }

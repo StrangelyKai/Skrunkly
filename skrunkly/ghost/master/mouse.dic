@@ -253,6 +253,7 @@ OnBoop : nonoverlap
 	"%(kaomoji('happy'))"
 	"%(kaomoji('cat'))"
 	"%(kaomoji('bunny'))"
+	"why"
 }
 
 OnMouseLeaveAll

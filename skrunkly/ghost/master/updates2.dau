@@ -1,12 +1,12 @@
-ghost/master/aitalk.dic4381e2ec8e422b9125a3747f237d2c40size=33734date=2024-02-19T13:10:38charset=OSNative
+ghost/master/aitalk.dicc13fc6d5e8f3aa02bbab968d72f58f96size=43946date=2024-11-11T07:12:04charset=OSNative
 ghost/master/descript.txt4bdf09a5ea6b42da2779e51740cff240size=243date=2023-12-14T00:42:43
 ghost/master/emerg.dicc7cb6eacd3262003fef909c382a6fefesize=351date=2023-04-15T05:45:50
 ghost/master/icon.icoe45db3bd1697d2943caa12ed26ba82e9size=100970date=2023-05-16T13:58:06
 ghost/master/images/3d_skrunkly.png0b4573066eaa52707cc9a16765a5f725size=13506date=2024-02-13T18:19:48
-ghost/master/mouse.dic20fa83ad09cf85df2254163cc595aa17size=4717date=2024-01-08T10:52:24
-ghost/master/other.dica75bc882986c7d1c65e20eae82de0c6asize=9394date=2023-12-30T05:04:25
+ghost/master/mouse.dicc1fe9f44da51db14c9f52ad8ecf01481size=4725date=2024-03-09T16:31:45
+ghost/master/other.dicd02595e6f49b34fa376ba4b7901c49d0size=11063date=2024-03-08T05:58:27
 ghost/master/sakura_menu.dicaa35a12cc17bb796928ee54dd94737desize=1721date=2023-12-29T16:35:17
-ghost/master/word.dice6d5d0edbdd55d126c03081ae8383e6csize=19525date=2024-02-19T13:11:38
+ghost/master/word.dic060703eb7fa5d9d36049db3437965f00size=19977date=2024-05-11T01:21:55
 ghost/master/yaya.dll56e3af56c88e696cea1f39d53b239cefsize=880640date=2022-09-11T09:18:59
 ghost/master/yaya.txtd522a3645acce74b4e7acff5b417c88asize=677date=2023-11-28T21:14:54
 ghost/master/yaya_base/_loading_order.txt9c350c2c9c08f635bff5eaae149af8c8size=103date=2023-04-03T00:34:13
@@ -16,7 +16,7 @@ ghost/master/yaya_base/optional.dicff4da728a656a8aa6a38939e654c51f2size=9953d
 ghost/master/yaya_base/shiori3.dic1020638d5e3881c23cc9baabc366e730size=52209date=2023-04-03T00:34:13
 ghost/master/yaya_emerg.txt9e43b4696366a536ecc69e45d80e392csize=607date=2023-04-15T05:44:19
 install.txtd7d900350765c724e710bb7ff7e3da83size=62date=2023-05-12T16:08:42
-readme.txt4fa1590ea93442f58eeeb3be65e1cf70size=720date=2024-02-19T13:25:37
+readme.txt9a516bdecfeebeaed55ff95fa74168d0size=744date=2024-11-11T07:00:33
 shell/crimas/collision0.png880c01a8819947e328e5928e9947936fsize=1831date=2023-12-09T08:02:56
 shell/crimas/descript.txtf65fb58655be2c2d217b3526d94ca803size=447date=2024-02-11T07:55:54
 shell/crimas/install.txtb1b3e56e3d7f091ff9c405f7cd17f68esize=63date=2023-12-09T08:07:07
