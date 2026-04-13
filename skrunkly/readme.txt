@@ -1,4 +1,4 @@
-SKRUNKLY!! [v1.5]
+SKRUNKLY!! [v1.8]
 
 Content Warnings:
 - Swearing

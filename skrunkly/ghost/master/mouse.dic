@@ -91,6 +91,10 @@ OnNeedlePoke
 			{
 				"Please don't take my blood."
 			}
+			when "Skrunkeedle"
+			{
+				"Hey that guy looks familiar.\w8\nAlso ow."
+			}
 			others
 			{
 				"sharp"

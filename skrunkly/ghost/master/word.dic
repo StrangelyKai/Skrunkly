@@ -500,6 +500,7 @@ beep : nonoverlap
 	"nom nom"
 	"bink bink"
 	"bap bap"
+	"tap tap"
 }
 
 meow : all
@@ -545,7 +546,8 @@ that
 	"believes they are the mayor of idiotville"
 	"cried for hours after losing progress in a game about an icecube"
 	"hasn't left the house in months"
-	"need therapy"
+	"needs therapy"
+	"is afraid. like constantly."
 }
 
 ext : nonoverlap
@@ -599,7 +601,6 @@ gender : nonoverlap
 	"every gender all at once, but also none at the same time"
 	"a little silly, a little goofy even"
 	"gerard way in the desolation row music video"
-	"the music video for lovejoy's 'portrait of a blank slate'"
 }
 
 bodypart : nonoverlap
@@ -767,6 +768,7 @@ era
 	"taking care of myself"
 	"murder"
 	"lying"
+	"god complex"
 }
 
 shoutout
@@ -786,6 +788,7 @@ magic
 	"friendship"
 	"dad saying hes proud of you"
 	"charles entertainment cheese"
+	"kansas"
 }
 
 cursed
@@ -794,4 +797,5 @@ cursed
 	if nsfw == 1; "people who erp on ponytown"
 	"me"
 	"the crushing weight of disappointing your parents"
+	"deez nuts"
 }
